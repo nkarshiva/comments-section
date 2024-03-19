@@ -132,6 +132,7 @@ const CommentSection = () => {
   return (
     <div className="comment-section-container">
       <div className="comment-section">
+        <p>Comment</p>
         <div className="comment-input">
           <input
             type="text"
