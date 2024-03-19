@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.comment-section-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  margin-top:20px;
+}
+
+.comment-section {
+  width:500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #e6e2e2;
+}
+.post-button{
+  float: right;
+  background-color: rgb(122, 122, 221);
+  color:white;
+  cursor: pointer;
+  width:100px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.comment-input {
+  margin-bottom: 20px;
+}
+
+.comment-input input,
+.comment-input textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.comment-list{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.comments-list .comment
+{
+  position: relative;
+  width:500px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #e6e2e2;
+}
+
+.reply{
+  position: relative;
+}
+.replies-section .reply {
+  width: 450px; /* Adjust width as needed */
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #e6e2e2;
+}
+
+.comment-name,
+.reply-name {
+  font-weight: bold;
+}
+
+.comment-text,
+.reply-text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.comment-datetime,
+.reply-datetime {
+  font-size: 12px;
+  color: #666;
+}
+
+.reply-button {
+  cursor: pointer;
+  margin-left: 10px;
+  color: rgb(122, 122, 221);
+}
+.edit-button{
+  cursor: pointer;
+  color: rgb(122, 122, 221);
+}
+
+.save-button{
+  cursor: pointer;
+  color: rgb(122, 122, 221);
+}
+.cancel-button{
+  cursor: pointer;
+  margin-left: 10px;
+  color: rgb(122, 122, 221);
+}
+
+.comment-buttons button,
+.reply-buttons button {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.comment-edit textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.reply-box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 20px; /* Adjust margin as needed */
+}
+
+.reply-box input,
+.reply-box textarea {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+}
+
+.post-reply-button {
+
+  background-color: rgb(122, 122, 221);;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.post-reply-button:hover {
+  background-color: darkblue;
+}
+.reply-name-and-date{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.comment-name-and-date{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.delete-button{
+  cursor: pointer;
+  position: absolute;
+  right: -4%;
+  top:50%
+}
+
+.reply .delete-button{
+  cursor: pointer;
+  position: absolute;
+  right: -2%;
+  top:50%
+}
+.sort-container{
+  width:500px;
+}
+.sort-text{
+  float: right;
+  cursor:pointer;
 }
